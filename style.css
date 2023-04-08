@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.outer-box {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left, #ff0f7b, #f89b29);
+}
+
+.inner-box {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #ff0f7b;
+    z-index: 2;
+    overflow:hidden;
+}
+
+.signup-header h1 {
+    font-size: 2.5rem;
+    color: #212121;
+}
+
+
+.signup-header p {
+    font-size: 0.9rem;
+    color: #555;
+
+}
+
+.signup-body {
+    margin: 20px 0;
+}
+
+.signup-body p {
+    margin: 10px 0;
+
+}
+
+.signup-body p label {
+    display: block;
+    font-weight: bold;
+}
+
+.signup-body p input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.signup-body p input[type=submit] {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+.signup-body p input[type=submit]:hover {
+    background-color: #0061ff;
+}
+
+.signup-footer p {
+    text-align: center;
+    color: #555;
+}
+
+.signup-footer p a {
+    color: #272727;
+    padding-left: 7px;
+
+}
+
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to top right, #FE9CAFaa, #FE9CAF);
+    position: absolute;
+    z-index: 1;
+    
+}
+
+.c1 {
+    top: 100px;
+    left: 10px;
+    animation: move1 30s infinite ease-in-out;
+
+}
+
+.c2 {
+    bottom: 200px;
+    right: 10px;
+    animation: move2 20s infinite ease-in-out;
+
+}
+
+a:hover { 
+    text-decoration: none ;
+}
+
+
+@keyframes move1{
+    0%{margin-right: 0;}
+    50%{margin-left: 480px;}
+    100%{margin-left: 0;}
+}
+@keyframes move2{
+    0%{margin-left: 0;}
+    50%{margin-right: 480px;}
+    100%{margin-right: 0;}
+}
+
